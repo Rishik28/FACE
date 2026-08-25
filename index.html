@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FACE // Composite Intake</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="arcade.css"></head>
+<body><main class="app">
+<section class="stage"><header><span>COMPOSITE INTAKE</span><span>SUBJECT <b>#0001</b></span></header>
+<div class="stats"><div><small>IMPRESSIONS</small><strong id="imp">0</strong></div><div><small>PER SECOND</small><strong id="ips">0</strong></div><div><small>DANDER</small><strong id="dan">0</strong></div><div><small>SILVER DANDER</small><strong id="silver">0</strong></div><div><small>AIR</small><strong id="air">0</strong></div><div><small>SOFT BOOGIES</small><strong id="boogies">0</strong></div></div>
+<div class="streak-hud" id="streakHud"><div><span>OBSERVATION STREAK</span><b id="streakText">×1.00</b></div><div class="streak-track"><i id="streakFill"></i></div></div><div class="fatigue-hud"><div><span>OCULAR FATIGUE</span><b id="fatigueText">0%</b></div><div class="fatigue-track"><i id="fatigueFill"></i></div></div>
+<div class="face" id="face"><i class="axis v"></i><i class="axis h"></i>
+<img class="face-part eyes-art" id="eyesArt" alt="Assigned eye composite">
+<img class="face-part pupils-art" id="pupilsArt" alt="Assigned pupil composite">
+<img class="face-part brows-art hidden" id="browsArt" alt="Assigned eyebrow composite">
+<img class="face-part lids-art hidden" id="lidsArt" alt="Assigned eyelid composite">
+<img class="face-part blink-art hidden" id="blinkArt" alt="Animated blink">
+<img class="face-part nose-art unprocessed" id="noseArt" alt="Assigned nose composite">
+<img class="face-part mouth-art unprocessed" id="mouthArt" alt="Assigned mouth composite">
+<button class="eye left" id="eye1" title="Observe eye" aria-label="Observe left eye"><span class="ball"><span class="iris"><span class="pupil"></span></span></span><em>OBSERVE</em></button>
+<button class="eye right hidden" id="eye2" title="Observe eye" aria-label="Observe right eye" disabled><span class="ball"><span class="iris"><span class="pupil"></span></span></span></button>
+<button class="blink-target hidden" id="blinkButton" title="Blink eyelids" aria-label="Blink eyelids"><span>BLINK</span><small id="blinkYield">+1 SILVER</small></button>
+<button class="nose-target hidden" id="noseButton" title="Pull a nose hair" aria-label="Pull a nose hair"><span>PULL HAIR</span><small id="pluckYield">+3 DANDER</small></button>
+<div class="brow left hidden" id="brow1"></div><div class="brow right hidden" id="brow2"></div>
+<div class="missing nose">NOSE<br>NOT RECORDED</div><div class="missing mouth">MOUTH NOT RECORDED</div><div id="particles"></div><div id="floats"></div></div>
+<footer><span id="save">LOCAL RECORD ACTIVE</span><span><button id="devToggle">CALIBRATION</button> <button id="reset">DESTROY RECORD</button></span></footer></section>
+<aside><div class="mast"><p>IDENTIFICATION UNIT</p><h1>FACE</h1><p>Incremental composite assembly</p></div>
+<section><h2><span>01</span> OCULAR RECORD</h2><p>Repeated observation produces impressions. The subject appears to notice.</p><div id="ocular" class="upgrades"></div></section>
+<section id="browSection" class="locked"><h2><span>02</span> BROW RECORD</h2><p id="browDesc">Insufficient visual material.</p><div id="brows" class="upgrades"></div></section>
+<section id="lidSection" class="locked"><h2><span>03</span> LID RECORD</h2><p id="lidDesc">Blink response not yet recorded.</p><div id="lids" class="upgrades"></div></section><section id="noseSection" class="locked"><h2><span>04</span> NASAL RECORD</h2><p id="noseDesc">No airway has been entered into evidence.</p><div id="noseUpgrades" class="upgrades"></div></section><section class="locked"><h2><span>05</span> REMAINDER</h2><p>Mouth remains outside the present record.</p></section>
+<section id="prestigeSection"><h2><span>∞</span> RECONSTITUTE</h2><p>Destroy the economy, increase all future production, and randomly reassign every composite fragment.</p><button class="prestige-button" id="prestigeButton" disabled><span>RECONSTITUTE SUBJECT</span><b id="prestigeRequirement">2.50K IMP REQUIRED</b></button><small class="prestige-level" id="prestigeLevel">REVISION 0 · ×1.00 GLOBAL</small></section>
+<div class="notice" id="notice">Click the visible eye to begin the intake.</div></aside><div class="unlock-splash" id="splash"><small>COMPOSITE UPDATED</small><strong id="splashText"></strong></div><section class="dev-panel hidden" id="devPanel"><header><b>CALIBRATION CONSOLE</b><button id="devClose">×</button></header><div class="dev-grid"><button data-dev="imp">+1K IMP</button><button data-dev="dan">+100 DAN</button><button data-dev="silver">+50 SILVER</button><button data-dev="air">+250 AIR</button><button data-dev="boogies">+100 BOOGIES</button><button data-dev="fatigue">CLEAR FATIGUE</button><button data-dev="prestige">READY PRESTIGE</button><button data-dev="speed" id="speedButton">SPEED ×1</button></div><small>Development values are stored in the current record. Simulation speed is not.</small></section></main><script src="js/config.js"></script><script src="js/effects.js"></script><script src="game.js"></script></body></html>

@@ -1,0 +1,18 @@
+# Headless-browser test profiles and captures
+.edge-*/
+*-smoke-test.png
+smoke-test*.png
+visual-refine-*.png
+button-architecture-test.png
+
+# OS and editor artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+*~
