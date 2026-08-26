@@ -24,4 +24,10 @@ Upgrade controls use persistent DOM nodes rather than rebuilding their markup ev
 
 The mouth unlocks for 250 Moisture. It contributes oral Air at twice the nasal baseline, generates saliva as Moisture, and supports active exhaling by clicking the mouth or pressing `M`. Stored Moisture closes the economy loop by applying a logarithmic multiplier to manual and automated Impression output, capped at ×2. The four persistent currencies are Impressions, Dander, Air, and Moisture.
 
+## Mobile and saves
+
+At phone widths, FACE uses separate Face and Upgrades views with a fixed bottom switcher, a sticky compact currency strip, larger touch targets, and safe-area spacing. Export Save creates a portable JSON record (or opens the phone's share sheet when supported); Import Save restores one of those records on another browser or device.
+
+The repository includes `.github/workflows/pages.yml`. After pushing `main` to GitHub, enable **Settings → Pages → Source: GitHub Actions** to publish the static game. Subsequent pushes to `main` deploy automatically.
+
 Older saves migrate once: Silver Dander is folded into Dander, Soft Boogies are folded into Moisture, and Real Dripper levels become nasal Moisture levels. Sound remains reserved for a later slice.

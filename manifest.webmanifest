@@ -1,0 +1,11 @@
+{
+  "name": "FACE — Composite Intake",
+  "short_name": "FACE",
+  "description": "An uncanny incremental facial-composite game.",
+  "start_url": "./#face",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ecebe6",
+  "theme_color": "#181816",
+  "orientation": "portrait-primary"
+}
