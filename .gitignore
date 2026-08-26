@@ -4,6 +4,7 @@
 smoke-test*.png
 visual-refine-*.png
 button-architecture-test.png
+*-economy-test.png
 
 # OS and editor artifacts
 .DS_Store
