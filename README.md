@@ -8,7 +8,7 @@ The prototype now uses the exported Identikit part library under `assets/parts`.
 
 Eyebrow Dander production is represented by a timed photographic-fragment wiggle and falling Dander specks. The second eyebrow receives a stronger paired motion. Calibration speed affects the pulse frequency, capped to keep the effect readable.
 
-The eyelid slice adds Ocular Fatigue, manual blinking, pooled Dander shedding, Lash Density, and independent Blink Reflex automation. Manual eye clicks gradually fall to 35% efficiency until a blink clears fatigue. Click the eyelid band or press `B`. Blinks use an eight-frame, non-looping forensic-composite GIF that is restarted for every manual or automatic blink.
+The eyelid slice adds Ocular Fatigue, manual blinking, pooled Dander shedding, Lash Density, and independent Blink Reflex automation. Manual eye clicks gradually fall to 35% efficiency until a blink clears fatigue. Click the eyelid band or press `B`. Blinks are assembled from the subject's currently assigned `EY` eye and `EL` eyelid images: the eye compresses closed beneath its randomized lid, so every reconstituted subject keeps its own blink.
 
 The **CALIBRATION** console (also toggled with the backtick key) grants test resources, clears fatigue, readies prestige, and runs the simulation at ×1, ×5, or ×10 speed. These controls are intended for pacing work rather than the final player-facing build.
 
