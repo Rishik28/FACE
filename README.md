@@ -26,7 +26,7 @@ The mouth unlocks for 250 Moisture. It contributes oral Air at twice the nasal b
 
 ## Mobile and saves
 
-At phone widths, FACE uses separate Face and Upgrades views with a fixed bottom switcher, a sticky compact currency strip, larger touch targets, and safe-area spacing. Export Save creates a portable JSON record (or opens the phone's share sheet when supported); Import Save restores one of those records on another browser or device.
+At phone widths, FACE uses separate Face and Upgrades views with a fixed bottom switcher, a sticky compact currency strip, larger touch targets, and safe-area spacing. Export Save creates a portable JSON record (or opens the phone's share sheet when supported); Import Save restores one of those records on another browser or device. Offline service-worker caching is disabled during active prototyping so deployed visual changes arrive reliably.
 
 The repository includes `.github/workflows/pages.yml`. After pushing `main` to GitHub, enable **Settings → Pages → Source: GitHub Actions** to publish the static game. Subsequent pushes to `main` deploy automatically.
 
